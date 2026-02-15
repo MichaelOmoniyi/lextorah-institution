@@ -56,6 +56,12 @@
   background: var(--white);
   border-radius: var(--radius-lg);
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+}
+
+.item:hover {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  transform: translateY(-4px);
 }
 
 .iconWrapper {

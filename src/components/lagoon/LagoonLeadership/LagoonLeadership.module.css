@@ -53,6 +53,12 @@
   border-radius: var(--radius-lg);
   text-align: left;
   background: linear-gradient(135deg, #FEF2F2 0%, #F0FDFA 50%);
+  transition: all 0.2s ease;
+}
+
+.featureCard:hover {
+  background: linear-gradient(135deg, #F0FDFA 0%, #FEF2F2);
+  transform: translateY(-2px);
 }
 
 .iconWrapper {
