@@ -16,6 +16,11 @@
   background: #FFFFFF;
   border-top: 4px solid #1B5E20;
   border-radius: var(--radius-lg);
+  transition: all 0.4s ease;
+}
+
+.card:hover {
+  border-top: 4px solid #219e2a;
 }
 
 .title {
