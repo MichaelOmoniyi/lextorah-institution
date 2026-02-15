@@ -68,6 +68,8 @@
 .optionCard:hover {
   box-shadow: var(--shadow-md);
   border-color: #DC2626;
+  background: rgba(0, 0, 0, 0.05);
+  transform: translateY(-4px);
 }
 
 .iconWrapper {

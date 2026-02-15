@@ -31,6 +31,13 @@
   align-items: center;
   text-align: center;
   padding: var(--spacing-lg);
+  border-radius: var(--radius-lg);
+  transition: all 0.2s ease;
+}
+
+.featureCard:hover {
+  background: rgba(0, 0, 0, 0.05);
+  transform: translateY(-4px);
 }
 
 .iconWrapper {
