@@ -93,6 +93,11 @@
   height: auto;
   border-radius: var(--radius-lg);
   object-fit: cover;
+  transition: all 0.2s ease;
+}
+
+.image:hover {
+  transform: scale(101%);
 }
 
 @media (max-width: 768px) {
