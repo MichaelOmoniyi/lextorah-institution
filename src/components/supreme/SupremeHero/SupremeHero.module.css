@@ -79,6 +79,7 @@
 
 .primaryButton:hover {
   background: #16A34A;
+  color: #fff;
   transform: translateY(-2px);
 }
 
