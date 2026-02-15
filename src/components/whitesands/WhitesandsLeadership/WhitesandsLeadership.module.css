@@ -58,16 +58,32 @@
   background: linear-gradient(135deg, #F0FDF4 0%, #DCFCE7 50%);
 }
 
+.featureCard.green:hover {
+  background: linear-gradient(135deg, #DCFCE7 0%, #F0FDF4 50%);
+}
+
 .featureCard.yellow {
   background: linear-gradient(135deg, #FEFCE8 0%, #FEF9C3 50%);
+}
+
+.featureCard.yellow:hover {
+  background: linear-gradient(135deg, #FEF9C3 0%, #FEFCE8 50%);
 }
 
 .featureCard.teal {
   background: linear-gradient(135deg, #F0FDF4 0%, #DCFCE7 50%);
 }
 
+.featureCard.teal:hover {
+  background: linear-gradient(135deg, #DCFCE7 0%, #F0FDF4 50%);
+}
+
 .featureCard.red {
   background: linear-gradient(135deg, #FEFCE8 0%, #FEF9C3 50%);
+}
+
+.featureCard.red:hover {
+  background: linear-gradient(135deg, #FEF9C3 0%, #FEFCE8 50%);
 }
 
 .featureCard:nth-child(odd) .iconWrapper {
