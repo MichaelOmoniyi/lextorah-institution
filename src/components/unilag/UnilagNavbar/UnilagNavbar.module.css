@@ -1,9 +1,10 @@
 .header {
-  position: absolute;
-  width: 100%;
+  position: fixed;
   top: 0;
-  z-index: 100;
-  background: transparent;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: linear-gradient(135deg, #EFF6FF 0%, #DBEAFE 50%, #EFF6FF 100%);
 }
 
 .nav {

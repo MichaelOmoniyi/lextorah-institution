@@ -2,7 +2,10 @@
   position: relative;
   padding: 4rem 1.5rem 8rem;
   background: linear-gradient(135deg, #1E3A8A 0%, #1E40AF 100%);
-  min-height: 450px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
@@ -164,14 +167,23 @@
     gap: 2rem;
   }
 
+  .content {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .title {
+    text-align: center;
+  }
+
   .featuresGrid {
-    max-width: 400px;
+    width: 100%;
   }
 }
 
 @media (max-width: 640px) {
   .hero {
-    padding: 2rem 1rem 6rem;
+    padding: 6rem 1rem 6rem;
   }
 
   .title {

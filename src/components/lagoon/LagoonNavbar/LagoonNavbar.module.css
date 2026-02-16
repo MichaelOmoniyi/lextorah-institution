@@ -1,7 +1,9 @@
 .header {
-  position: sticky;
+  position: fixed;
   top: 0;
-  z-index: 100;
+  left: 0;
+  right: 0;
+  z-index: 1000;
   background: var(--white);
   border-bottom: 1px solid var(--border-color);
 }
@@ -63,4 +65,11 @@
 
 .helpBtn:hover {
   background: var(--bg-secondary);
+}
+
+@media (max-width: 768px) {
+  .loginBtn, .helpBtn {
+    padding: var(--spacing-xs) var(--spacing-md);
+    font-size: var(--font-size-xs);
+  }
 }
