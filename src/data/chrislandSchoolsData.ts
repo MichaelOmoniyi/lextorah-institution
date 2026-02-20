@@ -1,7 +1,5 @@
 // Chrisland Schools Landing Page Data
 
-import { Iceberg } from "next/font/google";
-
 export const chrislandHero = {
   schoolName: "Chrisland Schools",
   title: "Welcome to",
