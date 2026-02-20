@@ -21,14 +21,12 @@ import {
   coronaFooterData,
 } from "@/data/coronaSchoolsData";
 
-import styles from "./page.module.css";
-
 export default function CoronaSchoolsPage() {
   return (
-    <div className={styles.page}>
+    <div className="min-h-screen flex flex-col">
       <CoronaNavbar />
       
-      <main>
+      <main className="flex-1">
         <CoronaHero {...coronaHero} />
         
         <CoronaForStudents {...forStudentsData} />

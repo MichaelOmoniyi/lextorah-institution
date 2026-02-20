@@ -21,14 +21,12 @@ import {
   chrislandFooterData,
 } from "@/data/chrislandSchoolsData";
 
-import styles from "./page.module.css";
-
 export default function ChrislandSchoolsPage() {
   return (
-    <div className={styles.page}>
+    <div className="min-h-screen flex flex-col">
       <ChrislandNavbar />
       
-      <main>
+      <main className="flex-1">
         <ChrislandHero
           title={chrislandHero.title}
           highlight={chrislandHero.highlight}
