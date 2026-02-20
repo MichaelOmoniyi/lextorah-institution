@@ -1,6 +1,3 @@
-"use client";
-
-import Image from "next/image";
 import styles from "./VisionMission.module.css";
 
 interface VisionMissionItem {
@@ -22,7 +19,7 @@ export default function VisionMission({ vision, mission }: VisionMissionProps) {
           {/* Vision Card */}
           <div className={styles.card}>
             <div className={styles.iconWrapper}>
-              <Image
+              <img
                 src={vision.icon}
                 alt="Vision Icon"
                 width={32}
@@ -36,7 +33,7 @@ export default function VisionMission({ vision, mission }: VisionMissionProps) {
           {/* Mission Card */}
           <div className={styles.card}>
             <div className={styles.iconWrapper}>
-              <Image
+              <img
                 src={mission.icon}
                 alt="Mission Icon"
                 width={32}

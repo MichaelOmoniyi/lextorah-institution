@@ -1,6 +1,3 @@
-"use client";
-
-import Image from "next/image";
 import styles from "./PrivacyContent.module.css";
 
 interface Subsection {
@@ -111,7 +108,7 @@ export default function PrivacyContent({ sections }: PrivacyContentProps) {
                   className={styles.contactLink}
                 >
                   <span className={styles.contactIcon}>
-                    <Image
+                    <img
                       src={section.contact.icon}
                       alt={`Icon`}
                       width={32}

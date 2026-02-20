@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { languagesSupported } from "@/data/parentsData";
 import styles from "./TeacherSubjectsSupported.module.css";
 
@@ -21,7 +20,7 @@ export default function TeacherSubjectsSupported({ exams }: TeacherSubjectsSuppo
           {/* Academic Subjects */}
           <div className={styles.card}>
             <div className={styles.cardIcon}>
-              <Image
+              <img
                 src="/icons/book.png"
                 alt="Academic Subjects Icon"
                 width={32}
@@ -37,7 +36,7 @@ export default function TeacherSubjectsSupported({ exams }: TeacherSubjectsSuppo
           {/* Language Learning Support */}
           <div className={styles.card}>
             <div className={styles.cardIcon}>
-              <Image
+              <img
                 src="/icons/language.png"
                 alt="Language Learning Icon"
                 width={32}
@@ -48,7 +47,7 @@ export default function TeacherSubjectsSupported({ exams }: TeacherSubjectsSuppo
             <ul className={styles.languageList}>
               {languagesSupported.map((lang, index) => (
                 <li key={index} className={styles.languageItem}>
-                  <Image
+                  <img
                     src="/icons/checkmark.png"
                     alt="Checkmark Icon"
                     width={14}
@@ -66,7 +65,7 @@ export default function TeacherSubjectsSupported({ exams }: TeacherSubjectsSuppo
           {/* Exam & Assessment Support */}
           <div className={styles.card}>
             <div className={styles.cardIcon}>
-              <Image
+              <img
                 src="/icons/document.png"
                 alt="Exam Preparation Icon"
                 width={32}
@@ -77,7 +76,7 @@ export default function TeacherSubjectsSupported({ exams }: TeacherSubjectsSuppo
             <div className={styles.examGrid}>
               {exams.map((exam, index) => (
                 <li key={index} className={styles.examBadge}>
-                  <Image
+                  <img
                     src="/icons/checkmark.png"
                     alt="Checkmark Icon"
                     width={14}

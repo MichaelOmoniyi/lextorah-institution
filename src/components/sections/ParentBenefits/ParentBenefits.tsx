@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { parentBenefits } from "@/data/parentsData";
 import styles from "./ParentBenefits.module.css";
 
@@ -17,7 +16,7 @@ export default function ParentBenefits() {
           {parentBenefits.map((benefit, index) => (
             <div key={index} className={styles.card}>
               <div className={styles.cardIcon}>
-                <Image
+                <img
                   src={benefit.icon}
                   alt="Exam Preparation Icon"
                   width={32}

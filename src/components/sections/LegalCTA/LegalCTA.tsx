@@ -1,6 +1,4 @@
-"use client";
-
-import Link from "next/link";
+import { Link } from "react-router-dom";
 import styles from "./LegalCTA.module.css";
 
 interface LegalCTAProps {
@@ -21,7 +19,7 @@ export default function LegalCTA({
       <div className={styles.container}>
         <h2 className={styles.title}>{title}</h2>
         <p className={styles.subtitle}>{subtitle}</p>
-        <Link href={buttonHref} className={styles.button}>
+        <Link to={buttonHref} className={styles.button}>
           {buttonText}
         </Link>
       </div>

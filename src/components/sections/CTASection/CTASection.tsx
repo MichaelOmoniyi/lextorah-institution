@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { Link } from "react-router-dom";
 import { ctaSection } from "@/data/parentsData";
 import styles from "./CTASection.module.css";
 
@@ -14,7 +14,7 @@ export default function CTASection() {
             {ctaSection.buttons.map((button, index) => (
               <Link
                 key={index}
-                href={button.href}
+                to={button.href}
                 className={`btn ${
                   button.variant === "primary" ? styles.btnPrimary : styles.btnSecondary
                 } ${styles.btn}`}

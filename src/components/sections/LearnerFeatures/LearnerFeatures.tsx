@@ -1,4 +1,3 @@
-import Image from "next/image";
 import styles from "./LearnerFeatures.module.css";
 
 interface MsLexiInfo {
@@ -31,7 +30,7 @@ export default function LearnerFeatures({
         {/* Meet Ms Lexi Card */}
         <div className={styles.msLexiCard}>
           <div className={styles.avatarContainer}>
-            <Image
+            <img
               src="/images/Ms-Lexi-AI-Tutor.png"
               alt="Ms. Lexi - AI Learning Support Tutor"
               width={120}
@@ -41,7 +40,7 @@ export default function LearnerFeatures({
           </div>
           <div className={styles.msLexiContent}>
             <div className={styles.featureIcon}>
-              <Image
+              <img
                 src="/icons/robot.png"
                 alt="Robot Icon"
                 width={32}
@@ -58,7 +57,7 @@ export default function LearnerFeatures({
           {/* How Lextorah AI Helps You Learn */}
           <div className={styles.featureCard}>
             <div className={styles.featureIcon}>
-              <Image
+              <img
                 src="/icons/book.png"
                 alt="Book Icon"
                 width={32}
@@ -69,7 +68,7 @@ export default function LearnerFeatures({
             <p className={styles.featureDescription}>{howItHelps.description}</p>
           </div>
           <div className={styles.featureImageWrapper}>
-            <Image
+            <img
               src="/images/How_Lextorah AI_Helps_You_Learn.png"
               alt="How Lextorah AI Helps You Learn"
               width={400}
@@ -83,7 +82,7 @@ export default function LearnerFeatures({
         <div className={styles.featuresGrid}>
           {/* Learn the Right Way */}
           <div className={styles.featureImageWrapper}>
-            <Image
+            <img
               src="/images/Learn_the_Right_Way.png"
               alt="Learn the Right Way"
               width={400}
@@ -93,7 +92,7 @@ export default function LearnerFeatures({
           </div>
           <div className={styles.featureCard}>
             <div className={styles.featureIcon}>
-              <Image
+              <img
                   src="/icons/book.png"
                   alt="Book Icon"
                   width={32}

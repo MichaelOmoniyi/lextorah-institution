@@ -1,4 +1,3 @@
-import Image from "next/image";
 import styles from "./TeacherBenefits.module.css";
 
 interface Benefit {
@@ -26,7 +25,7 @@ export default function TeacherBenefits({ benefits }: TeacherBenefitsProps) {
           {benefits.map((benefit, index) => (
             <div key={index} className={styles.card}>
               <div className={styles.cardIcon}>
-                <Image
+                <img
                   src={benefit.icon}
                   alt="Academic Subjects Icon"
                   width={32}

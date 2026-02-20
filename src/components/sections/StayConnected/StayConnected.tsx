@@ -1,5 +1,3 @@
-"use client";
-
 import styles from "./StayConnected.module.css";
 
 interface SocialLink {

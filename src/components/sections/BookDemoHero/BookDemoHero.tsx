@@ -1,6 +1,3 @@
-"use client";
-
-import Image from "next/image";
 import styles from "./BookDemoHero.module.css";
 
 interface BookDemoHeroProps {
@@ -18,7 +15,7 @@ export default function BookDemoHero({
     <section className={styles.hero}>
       <div className={styles.container}>
         <div className={styles.iconWrapper}>
-          <Image
+          <img
             src="/icons/demo.png"
             alt="Demo Icon"
             width={32}

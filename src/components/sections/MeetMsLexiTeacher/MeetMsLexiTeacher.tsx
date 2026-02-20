@@ -1,4 +1,3 @@
-import Image from "next/image";
 import styles from "./MeetMsLexiTeacher.module.css";
 
 interface MeetMsLexiTeacherProps {
@@ -18,7 +17,7 @@ export default function MeetMsLexiTeacher({ features }: MeetMsLexiTeacherProps) 
 
         <div className={styles.content}>
           <div className={styles.avatarWrapper}>
-            <Image
+            <img
               src="/images/Ms-Lexi-AI-Tutor.png"
               alt="Ms. Lexi - AI Teaching Support Tutor"
               width={280}

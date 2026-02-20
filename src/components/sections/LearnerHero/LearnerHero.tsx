@@ -1,5 +1,4 @@
-import Link from "next/link";
-import Image from "next/image";
+import { Link } from "react-router-dom";
 import styles from "../HeroSection/HeroSection.module.css";
 import heroStyles from "./LearnerHero.module.css";
 
@@ -29,12 +28,10 @@ export default function LearnerHero({
   return (
     <section className={styles.hero}>
       <div className={styles.backgroundImage}>
-        <Image
+        <img
           src={backgroundImage}
           alt="Hero background"
-          fill
-          priority
-          style={{ objectFit: "cover" }}
+          style={{ objectFit: "cover", width: "100%", height: "100%" }}
         />
         <div className={styles.overlay}></div>
       </div>
@@ -44,11 +41,11 @@ export default function LearnerHero({
           <h1 className={styles.title}>{title}</h1>
           {subtitle && <p className={styles.subtitle}>{subtitle}</p>}
           <div className={styles.buttons}>
-            <Link href={primaryButtonHref} className={`btn btn-primary ${styles.primaryBtn}`}>
+            <Link to={primaryButtonHref} className={`btn btn-primary ${styles.primaryBtn}`}>
               {primaryButtonText}
             </Link>
             {secondaryButtonText && secondaryButtonHref && (
-              <Link href={secondaryButtonHref} className={`btn btn-secondary ${styles.secondaryBtn} ${heroStyles.secondaryBtn}`}>
+              <Link to={secondaryButtonHref} className={`btn btn-secondary ${styles.secondaryBtn} ${heroStyles.secondaryBtn}`}>
                 {secondaryButtonText}
               </Link>
             )}

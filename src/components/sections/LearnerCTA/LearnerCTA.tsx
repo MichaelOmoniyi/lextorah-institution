@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { Link } from "react-router-dom";
 import styles from "./LearnerCTA.module.css";
 
 interface Button {
@@ -25,7 +25,7 @@ export default function LearnerCTA({ title, description, buttons }: LearnerCTAPr
             {buttons.map((button, index) => (
               <Link
                 key={index}
-                href={button.href}
+                to={button.href}
                 className={`${styles.btn} ${
                   button.variant === "primary"
                     ? styles.btnPrimary

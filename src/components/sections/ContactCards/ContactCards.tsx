@@ -1,6 +1,3 @@
-"use client";
-
-import Image from "next/image";
 import styles from "./ContactCards.module.css";
 
 interface ContactItem {
@@ -29,7 +26,7 @@ export default function ContactCards({ cards }: ContactCardsProps) {
           {cards.map((card, index) => (
             <div key={index} className={styles.card}>
               <div className={styles.iconWrapper}>
-                <Image
+                <img
                   src={card.icon}
                   alt={`Icon`}
                   width={24}
@@ -50,7 +47,7 @@ export default function ContactCards({ cards }: ContactCardsProps) {
                       >
                         {contact.icon && (
                           <span className={styles.contactIcon}>
-                            <Image
+                            <img
                               src={contact.icon}
                               alt={`Icon`}
                               width={32}
@@ -68,7 +65,7 @@ export default function ContactCards({ cards }: ContactCardsProps) {
                       >
                         {contact.icon && (
                           <span className={styles.contactIcon}>
-                            <Image
+                            <img
                               src={contact.icon}
                               alt={`Icon`}
                               width={32}
@@ -83,7 +80,7 @@ export default function ContactCards({ cards }: ContactCardsProps) {
                       <div className={styles.hoursItem}>
                         {contact.icon && (
                           <span className={styles.contactIcon}>
-                            <Image
+                            <img
                               src={contact.icon}
                               alt={`Icon`}
                               width={32}

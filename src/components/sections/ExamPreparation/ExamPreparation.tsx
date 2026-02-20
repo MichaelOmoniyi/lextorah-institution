@@ -1,4 +1,3 @@
-import Image from "next/image";
 import styles from "./ExamPreparation.module.css";
 
 interface ExamCategory {
@@ -35,7 +34,7 @@ export default function ExamPreparation({ categories, features }: ExamPreparatio
             <div key={index} className={styles.categoryCard}>
               <div className={styles.categoryIcon}>
                 {category.icon ? (
-                  <Image
+                  <img
                     src={category.icon}
                     alt={`${category.title} Icon`}
                     width={32}

@@ -1,5 +1,3 @@
-"use client";
-
 import styles from "./LegalHero.module.css";
 
 interface LegalHeroProps {

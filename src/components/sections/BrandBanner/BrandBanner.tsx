@@ -1,5 +1,3 @@
-"use client";
-
 import styles from "./BrandBanner.module.css";
 
 interface BrandBannerProps {

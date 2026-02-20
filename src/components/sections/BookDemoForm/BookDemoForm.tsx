@@ -1,6 +1,3 @@
-"use client";
-
-import Image from "next/image";
 import { useState } from "react";
 import styles from "./BookDemoForm.module.css";
 
@@ -245,7 +242,7 @@ export default function BookDemoForm({
             <div key={section.number} className={styles.formSection}>
               <div className={styles.sectionHeader}>
                 <span className={styles.sectionIcon}>
-                  <Image
+                  <img
                     src={section.icon}
                     alt={`${section.title} Icon`}
                     width={32}

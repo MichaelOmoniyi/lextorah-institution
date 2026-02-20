@@ -1,4 +1,3 @@
-import Image from "next/image";
 import styles from "./ResponsibleProfessionalUse.module.css";
 
 interface Feature {
@@ -23,7 +22,7 @@ export default function ResponsibleProfessionalUse({ features }: ResponsibleProf
           {features.map((feature, index) => (
             <div key={index} className={styles.item}>
               <div className={styles.itemIcon}>
-                <Image
+                <img
                   src={feature.icon}
                   alt="Icon"
                   width={32}

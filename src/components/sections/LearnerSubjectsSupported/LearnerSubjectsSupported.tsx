@@ -1,4 +1,3 @@
-import Image from "next/image";
 import styles from "./LearnerSubjectsSupported.module.css";
 
 interface Subject {
@@ -36,7 +35,7 @@ export default function LearnerSubjectsSupported({
           {/* Academic Subjects */}
           <div className={styles.card}>
             <div className={styles.featureIcon}>
-              <Image
+              <img
                 src="/icons/academic.png"
                 alt="Book Icon"
                 width={32}
@@ -64,7 +63,7 @@ export default function LearnerSubjectsSupported({
           {/* Language Learning */}
           <div className={styles.card}>
             <div className={styles.featureIcon}>
-              <Image
+              <img
                 src="/icons/globe.png"
                 alt="Book Icon"
                 width={32}
@@ -93,7 +92,7 @@ export default function LearnerSubjectsSupported({
           {categories.map((category, index) => (
             <div key={index} className={styles.categoryItem}>
               <div className={styles.categoryIcon}>
-                <Image
+                <img
                 src={category.icon}
                 alt="Icon"
                 width={32}

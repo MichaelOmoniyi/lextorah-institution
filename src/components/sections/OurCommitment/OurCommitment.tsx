@@ -1,6 +1,3 @@
-"use client";
-
-import Image from "next/image";
 import styles from "./OurCommitment.module.css";
 
 interface OurCommitmentProps {
@@ -17,7 +14,7 @@ export default function OurCommitment({ title, items }: OurCommitmentProps) {
           {items.map((item, index) => (
             <div key={index} className={styles.item}>
               <div className={index % 2 === 0 ? styles.iconWrapper : `${styles.iconWrapper} ${styles.alternateIconWrapper}`}>
-                <Image
+                <img
                   src={item.icon}
                   alt={`Icon`}
                   width={20}

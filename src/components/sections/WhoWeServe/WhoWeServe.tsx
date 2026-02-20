@@ -1,6 +1,3 @@
-"use client";
-
-import Image from "next/image";
 import styles from "./WhoWeServe.module.css";
 
 interface Audience {
@@ -27,7 +24,7 @@ export default function WhoWeServe({ title, subtitle, audiences }: WhoWeServePro
           {audiences.map((audience, index) => (
             <div key={index} className={styles.card}>
               <div className={styles.iconWrapper}>
-                <Image
+                <img
                   src={audience.icon}
                   alt={`${audience.title} Icon`}
                   width={32}

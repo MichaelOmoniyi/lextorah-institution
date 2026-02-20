@@ -1,6 +1,3 @@
-"use client";
-
-import Image from "next/image";
 import styles from "./GlobalPartnerships.module.css";
 
 interface Partner {
@@ -34,7 +31,7 @@ export default function GlobalPartnerships({
           {partners.map((partner, index) => (
             <div key={index} className={styles.card}>
               <div className={index % 2 === 0 ? styles.iconWrapper : `${styles.iconWrapper} ${styles.alternateIconWrapper}`}>
-                <Image
+                <img
                   src={partner.icon}
                   alt={`${partner.title} Icon`}
                   width={32}

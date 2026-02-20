@@ -1,6 +1,3 @@
-"use client";
-
-import Image from "next/image";
 import styles from "./WhatWeDo.module.css";
 
 interface WhatWeDoItem {
@@ -28,7 +25,7 @@ export default function WhatWeDo({ title, subtitle, items }: WhatWeDoProps) {
           {items.map((item, index) => (
             <div key={index} className={styles.card}>
               <div className={index % 2 === 0 ? styles.iconWrapper : `${styles.iconWrapper} ${styles.alternateIconWrapper}`}>
-                <Image
+                <img
                   src={item.icon}
                   alt={`${item.title} Icon`}
                   width={32}

@@ -1,4 +1,3 @@
-import Image from "next/image";
 import styles from "./FormalEducation.module.css";
 
 interface Feature {
@@ -26,7 +25,7 @@ export default function FormalEducation({ features }: FormalEducationProps) {
           {features.map((feature, index) => (
             <div key={index} className={styles.card}>
               <div className={styles.cardIcon}>
-                <Image
+                <img
                   src={feature.icon}
                   alt="Exam Preparation Icon"
                   width={32}

@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { responsibleUseFeatures } from "@/data/parentsData";
 import styles from "./ResponsibleUse.module.css";
 
@@ -17,7 +16,7 @@ export default function ResponsibleUse() {
           {responsibleUseFeatures.map((feature, index) => (
             <div key={index} className={styles.card}>
               <div className={styles.cardIcon}>
-                <Image
+                <img
                   src={feature.icon}
                   alt="Exam Preparation Icon"
                   width={32}

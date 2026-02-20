@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { dataProtectionFeatures } from "@/data/parentsData";
 import styles from "./DataProtection.module.css";
 
@@ -14,7 +13,7 @@ export default function DataProtection() {
           {dataProtectionFeatures.map((feature, index) => (
             <div key={index} className={styles.card}>
               <div className={styles.cardIcon}>
-                <Image
+                <img
                   src={feature.icon}
                   alt="Exam Preparation Icon"
                   width={32}

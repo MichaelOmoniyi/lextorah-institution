@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { msLexiFeatures } from "@/data/siteData";
 import styles from "./MeetMsLexi.module.css";
 
@@ -15,7 +14,7 @@ export default function MeetMsLexi() {
 
         <div className={styles.content}>
           <div className={styles.avatarWrapper}>
-            <Image
+            <img
                 src="/images/Ms-Lexi-AI-Tutor.png"
                 alt="Ms. Lexi - AI Tutor"
                 width={280}

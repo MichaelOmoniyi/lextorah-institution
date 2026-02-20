@@ -1,5 +1,3 @@
-"use client";
-
 import styles from "./ContactHero.module.css";
 
 interface ContactHeroProps {

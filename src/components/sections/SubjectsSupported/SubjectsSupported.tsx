@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { languagesSupported, examsSupported } from "@/data/parentsData";
 import styles from "./SubjectsSupported.module.css";
 
@@ -17,7 +16,7 @@ export default function SubjectsSupported() {
           {/* Academic Subjects */}
           <div className={styles.card}>
             <div className={styles.cardIcon}>
-              <Image
+              <img
                 src="/icons/book.png"
                 alt="Academic Subjects Icon"
                 width={32}
@@ -33,7 +32,7 @@ export default function SubjectsSupported() {
           {/* Language Learning */}
           <div className={styles.card}>
             <div className={styles.cardIcon}>
-              <Image
+              <img
                 src="/icons/language.png"
                 alt="Language Learning Icon"
                 width={32}
@@ -44,7 +43,7 @@ export default function SubjectsSupported() {
             <ul className={styles.languageList}>
               {languagesSupported.map((lang, index) => (
                 <li key={index} className={styles.languageItem}>
-                  <Image
+                  <img
                     src="/icons/checkmark.png"
                     alt="Checkmark Icon"
                     width={14}
@@ -59,7 +58,7 @@ export default function SubjectsSupported() {
           {/* Exam Preparation */}
           <div className={styles.card}>
             <div className={styles.cardIcon}>
-              <Image
+              <img
                 src="/icons/document.png"
                 alt="Exam Preparation Icon"
                 width={32}
@@ -70,7 +69,7 @@ export default function SubjectsSupported() {
             <div className={styles.examList}>
               {examsSupported.map((exam, index) => (
                 <li key={index} className={styles.examBadge}>
-                  <Image
+                  <img
                     src="/icons/checkmark.png"
                     alt="Checkmark Icon"
                     width={14}

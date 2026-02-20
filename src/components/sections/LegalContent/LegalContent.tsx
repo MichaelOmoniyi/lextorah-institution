@@ -1,5 +1,3 @@
-"use client";
-
 import styles from "./LegalContent.module.css";
 
 interface Section {

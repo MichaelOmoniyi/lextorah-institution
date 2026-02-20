@@ -1,4 +1,3 @@
-import Image from "next/image";
 import styles from "./GettingStarted.module.css";
 
 interface Step {
@@ -23,7 +22,7 @@ export default function GettingStarted({ steps }: GettingStartedProps) {
           {steps.map((step, index) => (
             <div key={index} className={styles.stepItem}>
               <div className={styles.stepNumber}>
-                <Image
+                <img
                   src={step.icon}
                   alt="Step Icon"
                   width={32}

@@ -1,6 +1,3 @@
-"use client";
-
-import Image from "next/image";
 import styles from "./LearningTech.module.css";
 
 interface LearningTechProps {
@@ -52,7 +49,7 @@ export default function LearningTech({
           <p className={styles.note}>{note}</p>
         </div>
         <div className={styles.learningTechimageWrapper}>
-          <Image
+          <img
             src={image}
             alt="Learning Technologies"
             width={400}
