@@ -1,5 +1,4 @@
-import Link from "next/link";
-import Image from "next/image";
+import { Link } from "react-router-dom";
 import { footerData } from "@/data/footerData";
 import styles from "./Footer.module.css";
 
@@ -10,8 +9,8 @@ export default function Footer() {
         <div className={styles.footerContent}>
           {/* Company Info */}
           <div className={styles.companyInfo}>
-            <Link href="/" className={styles.logo}>
-              <Image
+            <Link to="/" className={styles.logo}>
+              <img
                 src="/images/logo.png"
                 alt="Lextorah Logo"
                 width={120}
@@ -44,7 +43,7 @@ export default function Footer() {
                 <ul className={styles.columnLinks}>
                   {column.links.map((link) => (
                     <li key={link.href}>
-                      <Link href={link.href} className={styles.columnLink}>
+                      <Link to={link.href} className={styles.columnLink}>
                         {link.label}
                       </Link>
                     </li>

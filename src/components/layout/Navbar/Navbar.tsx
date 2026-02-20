@@ -1,8 +1,5 @@
-"use client";
-
 import { useState } from "react";
-import Link from "next/link";
-import Image from "next/image";
+import { Link } from "react-router-dom";
 import { navLinks } from "@/data/navbarData";
 import styles from "./Navbar.module.css";
 
@@ -16,13 +13,13 @@ export default function Navbar() {
   return (
     <header className={styles.header}>
       <nav className={styles.nav}>
-        <Link href="/" className={styles.logo}>
-          <Image
+        <Link to="/" className={styles.logo}>
+          <img
             src="/images/logo.png"
             alt="Lextorah Logo"
             width={120}
             height={32}
-            priority
+            
           />
         </Link>
 
@@ -31,7 +28,7 @@ export default function Navbar() {
           <ul className={styles.navLinks}>
             {navLinks.map((link) => (
               <li key={link.href}>
-                <Link href={link.href} className={styles.navLink}>
+                <Link to={link.href} className={styles.navLink}>
                   {link.label}
                 </Link>
               </li>
@@ -39,7 +36,7 @@ export default function Navbar() {
           </ul>
 
           <div className={styles.navActions}>
-            <Link href="/chat" className={`btn btn-primary ${styles.chatBtn}`}>
+            <Link to="/chat" className={`btn btn-primary ${styles.chatBtn}`}>
               Chat Now!
             </Link>
 
@@ -66,7 +63,7 @@ export default function Navbar() {
             {navLinks.map((link) => (
               <li key={link.href}>
                 <Link
-                  href={link.href}
+                  to={link.href}
                   className={styles.mobileNavLink}
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
@@ -76,7 +73,7 @@ export default function Navbar() {
             ))}
           </ul>
           <Link
-            href="/chat"
+            to="/chat"
             className={`btn btn-primary ${styles.mobileChatBtn}`}
             onClick={() => setIsMobileMenuOpen(false)}
           >
