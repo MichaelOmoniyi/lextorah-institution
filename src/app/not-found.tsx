@@ -1,8 +1,5 @@
-"use client";
-
-import Link from "next/link";
+import { Link } from "react-router-dom";
 import { DefaultLayout } from "@/components/layout";
-import styles from "./not-found.module.css";
 
 const quickLinks = [
   { label: "Home", href: "/" },
@@ -17,10 +14,13 @@ const quickLinks = [
 export default function NotFound() {
   return (
     <DefaultLayout>
-      <section className={styles.section}>
-        <div className={styles.container}>
+      <section
+        className="min-h-[calc(100vh-64px)] flex items-center justify-center px-[var(--spacing-xl)] py-[var(--spacing-3xl)] md:max-[768px]:px-[var(--spacing-md)] md:max-[768px]:py-[var(--spacing-2xl)]"
+        style={{ background: "linear-gradient(135deg, var(--background-light) 0%, var(--white) 50%, var(--primary-light) 100%)" }}
+      >
+        <div className="max-w-[600px] text-center">
           {/* 404 Icon */}
-          <div className={styles.iconWrapper}>
+          <div className="inline-flex items-center justify-center w-[100px] h-[100px] max-[768px]:w-[80px] max-[768px]:h-[80px] bg-[var(--primary-light)] rounded-full text-[var(--primary)] mb-[var(--spacing-lg)]">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="64"
@@ -31,6 +31,7 @@ export default function NotFound() {
               strokeWidth="1.5"
               strokeLinecap="round"
               strokeLinejoin="round"
+              className="max-[768px]:w-12 max-[768px]:h-12"
             >
               <circle cx="12" cy="12" r="10" />
               <path d="M16 16s-1.5-2-4-2-4 2-4 2" />
@@ -40,19 +41,34 @@ export default function NotFound() {
           </div>
 
           {/* Error Code */}
-          <h1 className={styles.errorCode}>404</h1>
+          <h1
+            className="text-[clamp(5rem,15vw,8rem)] font-extrabold leading-none mb-[var(--spacing-sm)]"
+            style={{
+              background: "linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%)",
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent",
+              backgroundClip: "text",
+            }}
+          >
+            404
+          </h1>
 
           {/* Title */}
-          <h2 className={styles.title}>Page Not Found</h2>
+          <h2 className="text-[clamp(1.5rem,4vw,2rem)] font-bold text-[var(--text-primary)] mb-[var(--spacing-md)]">
+            Page Not Found
+          </h2>
 
           {/* Description */}
-          <p className={styles.description}>
+          <p className="text-base text-[var(--text-secondary)] leading-[1.7] mb-[var(--spacing-xl)] max-w-[450px] mx-auto">
             Oops! The page you&apos;re looking for doesn&apos;t exist or has been moved.
             Don&apos;t worry, let&apos;s get you back on track.
           </p>
 
           {/* Primary CTA */}
-          <Link href="/" className={styles.primaryButton}>
+          <Link
+            to="/"
+            className="inline-flex items-center justify-center gap-[var(--spacing-sm)] px-[var(--spacing-xl)] py-[var(--spacing-md)] bg-[var(--primary)] text-[var(--white)] text-base font-semibold rounded-[var(--radius-md)] no-underline shadow-[var(--shadow-md)] transition-[var(--transition-base)] hover:bg-[var(--primary-dark)] hover:-translate-y-0.5 hover:shadow-[var(--shadow-lg)] hover:text-[var(--white)]"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"
@@ -71,11 +87,15 @@ export default function NotFound() {
           </Link>
 
           {/* Quick Links */}
-          <div className={styles.quickLinks}>
-            <p className={styles.quickLinksTitle}>Or explore these pages:</p>
-            <div className={styles.linksGrid}>
+          <div className="mt-[var(--spacing-2xl)] pt-[var(--spacing-xl)] border-t border-[var(--border-color)] max-[768px]:mt-[var(--spacing-xl)] max-[768px]:pt-[var(--spacing-lg)]">
+            <p className="text-[0.9rem] text-[var(--text-muted)] mb-[var(--spacing-md)]">Or explore these pages:</p>
+            <div className="flex flex-wrap justify-center gap-[var(--spacing-sm)] max-[768px]:gap-[var(--spacing-xs)]">
               {quickLinks.map((link, index) => (
-                <Link key={index} href={link.href} className={styles.quickLink}>
+                <Link
+                  key={index}
+                  to={link.href}
+                  className="inline-block px-[var(--spacing-md)] py-[var(--spacing-sm)] bg-[var(--white)] text-[var(--text-primary)] text-sm font-medium rounded-[var(--radius-md)] no-underline border border-[var(--border-color)] transition-[var(--transition-base)] hover:border-[var(--primary)] hover:text-[var(--primary)] hover:bg-[var(--primary-light)] max-[768px]:px-[var(--spacing-sm)] max-[768px]:py-[var(--spacing-xs)] max-[768px]:text-[0.8rem]"
+                >
                   {link.label}
                 </Link>
               ))}
@@ -83,8 +103,14 @@ export default function NotFound() {
           </div>
 
           {/* Help Text */}
-          <p className={styles.helpText}>
-            Need help? <Link href="/contact" className={styles.contactLink}>Contact our support team</Link>
+          <p className="mt-[var(--spacing-xl)] text-sm text-[var(--text-muted)]">
+            Need help?{" "}
+            <Link
+              to="/contact"
+              className="text-[var(--primary)] font-medium no-underline transition-[var(--transition-base)] hover:text-[var(--primary-dark)] hover:underline"
+            >
+              Contact our support team
+            </Link>
           </p>
         </div>
       </section>
