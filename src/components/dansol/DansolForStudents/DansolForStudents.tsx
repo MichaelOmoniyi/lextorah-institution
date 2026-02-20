@@ -1,7 +1,4 @@
-"use client";
-
 import React from "react";
-import Image from "next/image";
 import { dansolData } from "@/data/dansolSchoolsData";
 import styles from "./DansolForStudents.module.css";
 
@@ -13,7 +10,7 @@ const DansolForStudents: React.FC = () => {
       <div className={styles.container}>
         <div className={styles.grid}>
           <div className={styles.imageWrapper}>
-            <Image
+            <img
               src="/images/dansol/Dansol-Schools-Students-Learning.png"
               alt="Student learning"
               width={500}
@@ -34,7 +31,7 @@ const DansolForStudents: React.FC = () => {
                   <div 
                     className={styles.featureIcon}
                   >
-                    <Image
+                    <img
                       src={feature.icon}
                       alt={`${feature.title} Icon`}
                       width={16}

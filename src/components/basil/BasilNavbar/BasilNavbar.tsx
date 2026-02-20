@@ -1,8 +1,5 @@
-"use client";
-
 import React, { useState } from "react";
-import Image from "next/image";
-import Link from "next/link";
+import { Link } from "react-router-dom";
 import styles from "./BasilNavbar.module.css";
 
 const BasilNavbar: React.FC = () => {
@@ -15,23 +12,23 @@ const BasilNavbar: React.FC = () => {
   return (
     <nav className={styles.navbar}>
       <div className={styles.container}>
-        <Link href="/basil-schools" className={styles.logo}>
+        <Link to="/basil-schools" className={styles.logo}>
           <div className={styles.logoIcon}>
-            <Image
+            <img
               src="/images/basil/Basil-Schools-logo.png"
               alt="Supreme Foundation Schools Logo"
               width={34}
               height={34}
-              priority
+              
             />
           </div>
         </Link>
 
         <div className={styles.navActions}>
-          <Link href="#login" className={styles.loginButton}>
+          <Link to="#login" className={styles.loginButton}>
             Log In
           </Link>
-          <Link href="#support" className={styles.helpButton}>
+          <Link to="#support" className={styles.helpButton}>
             Get Help
           </Link>
         </div>
@@ -46,10 +43,10 @@ const BasilNavbar: React.FC = () => {
 
         {mobileMenuOpen && (
           <div className={styles.mobileMenu}>
-            <Link href="#login" className={styles.mobileLoginButton} onClick={() => setMobileMenuOpen(false)}>
+            <Link to="#login" className={styles.mobileLoginButton} onClick={() => setMobileMenuOpen(false)}>
               Log In
             </Link>
-            <Link href="#support" className={styles.mobileHelpButton} onClick={() => setMobileMenuOpen(false)}>
+            <Link to="#support" className={styles.mobileHelpButton} onClick={() => setMobileMenuOpen(false)}>
               Get Help
             </Link>
           </div>

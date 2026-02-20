@@ -1,8 +1,5 @@
-"use client";
-
 import React from "react";
-import Image from "next/image";
-import Link from "next/link";
+import { Link } from "react-router-dom";
 import { basilData } from "@/data/basilSchoolsData";
 import styles from "./BasilFooter.module.css";
 
@@ -16,12 +13,12 @@ const BasilFooter: React.FC = () => {
           <div className={styles.brand}>
             <div className={styles.logo}>
               <div className={styles.logoIcon}>
-                <Image
+                <img
                   src="/images/basil/Basil-Schools-logo.png"
                   alt="Supreme Foundation Schools Logo"
                   width={34}
                   height={34}
-                  priority
+                  
                 />
               </div>
             </div>
@@ -33,7 +30,7 @@ const BasilFooter: React.FC = () => {
             <ul className={styles.linksList}>
               {footer.quickLinks.map((link, index) => (
                 <li key={index}>
-                  <Link href={link.href} className={styles.link}>
+                  <Link to={link.href} className={styles.link}>
                     {link.label}
                   </Link>
                 </li>

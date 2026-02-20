@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 import { basilData } from "@/data/basilSchoolsData";
 import styles from "./BasilIntegrity.module.css";

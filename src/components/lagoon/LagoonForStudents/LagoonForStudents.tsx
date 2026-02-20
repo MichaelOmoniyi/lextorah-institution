@@ -1,4 +1,3 @@
-import Image from "next/image";
 import styles from "./LagoonForStudents.module.css";
 
 interface Benefit {
@@ -25,7 +24,7 @@ export default function LagoonForStudents({
     <section className={styles.section}>
       <div className={styles.container}>
         <div className={styles.imageWrapper}>
-          <Image
+          <img
             src={image}
             alt="Student learning"
             width={500}
@@ -36,7 +35,7 @@ export default function LagoonForStudents({
 
         <div className={styles.content}>
           <span className={styles.badge}>
-            <Image
+            <img
                         src="/images/lagoon/icons/student.png"
                 alt={`Student Icon`}
                 width={20}
@@ -51,7 +50,7 @@ export default function LagoonForStudents({
             {benefits.map((benefit, index) => (
               <li key={index} className={styles.benefitItem}>
                 <div className={styles.iconWrapper}>
-                  <Image
+                  <img
                             src={benefit.icon}
                     alt={`${benefit.title} Icon`}
                     width={16}

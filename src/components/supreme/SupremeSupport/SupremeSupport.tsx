@@ -1,7 +1,4 @@
-"use client";
-
 import React from "react";
-import Image from "next/image";
 import { supremeData } from "@/data/supremeSchoolsData";
 import styles from "./SupremeSupport.module.css";
 
@@ -45,7 +42,7 @@ const SupremeSupport: React.FC = () => {
       <div className={styles.container}>
         <div className={styles.header}>
           <div className={styles.headerIcon}>
-            <Image
+            <img
                         src="/images/supreme-foundation/icons/support.png"
                 alt={`Support Icon`}
                 width={24}
@@ -60,7 +57,7 @@ const SupremeSupport: React.FC = () => {
           {support.cards.map((card, index) => (
             <div key={index} className={styles.card}>
               <div className={styles.cardIcon}>
-                <Image
+                <img
                               src={card.icon}
                       alt={`${card.title} Icon`}
                       width={16}

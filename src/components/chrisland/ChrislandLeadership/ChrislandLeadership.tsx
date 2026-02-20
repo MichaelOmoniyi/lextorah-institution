@@ -1,4 +1,3 @@
-import Image from "next/image";
 import styles from "./ChrislandLeadership.module.css";
 
 interface Feature {
@@ -33,7 +32,7 @@ export default function ChrislandLeadership({
           {features.map((feature, index) => (
             <div key={index} className={styles.featureCard}>
                 <span className={styles.icon}>
-                  <Image
+                  <img
                     src={feature.icon}
                     alt="Checkmark Icon"
                     width={24}

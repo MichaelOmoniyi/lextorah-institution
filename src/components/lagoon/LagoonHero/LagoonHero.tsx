@@ -1,5 +1,4 @@
-import Link from "next/link";
-import Image from "next/image";
+import { Link } from "react-router-dom";
 import styles from "./LagoonHero.module.css";
 
 interface LagoonHeroProps {
@@ -37,7 +36,7 @@ export default function LagoonHero({
             {title} <span className={styles.highlight}>{highlight}</span> {subtitle}
           </h1>
           <span className={styles.badge}>
-            <Image
+            <img
                       src="/images/lagoon/icons/powered-by.png"
               alt={`Powered By Icon`}
               width={20}
@@ -47,27 +46,27 @@ export default function LagoonHero({
           </span>
           <p className={styles.description}>{description}</p>
           <div className={styles.buttons}>
-            <Link href={primaryButtonHref} className={styles.primaryBtn}>
+            <Link to={primaryButtonHref} className={styles.primaryBtn}>
               {primaryButtonText}
             </Link>
-            <Link href={secondaryButtonHref} className={styles.secondaryBtn}>
+            <Link to={secondaryButtonHref} className={styles.secondaryBtn}>
               {secondaryButtonText}
             </Link>
           </div>
         </div>
 
         <div className={styles.imageWrapper}>
-          <Image
+          <img
             src={image}
             alt="Students at Lagoon Schools"
             width={500}
             height={400}
             className={styles.image}
-            priority
+            
           />
           <div className={styles.supportBadge}>
             <div className={styles.supportIcon}>
-              <Image
+              <img
                         src="/images/lagoon/icons/robot.png"
                 alt={`Robot Icon`}
                 width={20}

@@ -1,4 +1,3 @@
-import Image from "next/image";
 import styles from "./CoronaForTeachers.module.css";
 
 interface Benefit {
@@ -25,7 +24,7 @@ export default function CoronaForTeachers({
       <div className={styles.container}>
         <div className={styles.content}>
           <div className={styles.imageWrapper}>
-            <Image
+            <img
               src={image}
               alt="Teachers using Lextorah AI"
               width={450}
@@ -36,7 +35,7 @@ export default function CoronaForTeachers({
           <div className={styles.textContent}>
             <div className={styles.titleWrapper}>
               <span className={styles.icon}>
-                <Image
+                <img
                     src="/images/corona/icons/teachers.png"
                     alt="Teachers Icon"
                     width={24}

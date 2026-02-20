@@ -1,7 +1,4 @@
-"use client";
-
 import React from "react";
-import Image from "next/image";
 import { dansolData } from "@/data/dansolSchoolsData";
 import styles from "./DansolLeadership.module.css";
 
@@ -14,7 +11,7 @@ const DansolLeadership: React.FC = () => {
         <div className={styles.header}>
           <div className={styles.badgeWrapper}>
             <div className={styles.badgeIcon}>
-              <Image
+              <img
                 src="/images/dansol/icons/leadership.png"
                 alt={`Safe Icon`}
                 width={16}
@@ -30,7 +27,7 @@ const DansolLeadership: React.FC = () => {
           {leadership.cards.map((card, index) => (
             <div key={index} className={styles.card}>
               <div className={styles.cardIcon}>
-                <Image
+                <img
                   src={card.icon}
                   alt={`${card.title} Icon`}
                   width={16}

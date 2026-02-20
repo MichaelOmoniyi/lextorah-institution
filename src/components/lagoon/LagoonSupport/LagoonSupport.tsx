@@ -1,4 +1,3 @@
-import Image from "next/image";
 import styles from "./LagoonSupport.module.css";
 
 interface SupportItem {
@@ -27,7 +26,7 @@ export default function LagoonSupport({
       <div className={styles.container}>
         <div className={styles.header}>
           <span className={styles.badge}>
-            <Image
+            <img
                         src="/images/lagoon/icons/support.png"
                 alt={`Support Icon`}
                 width={20}
@@ -43,7 +42,7 @@ export default function LagoonSupport({
           {items.map((item, index) => (
             <div key={index} className={styles.item}>
               <div className={styles.iconWrapper}>
-                <Image
+                <img
                             src={item.icon}
                     alt={`${item.description} Icon`}
                     width={28}

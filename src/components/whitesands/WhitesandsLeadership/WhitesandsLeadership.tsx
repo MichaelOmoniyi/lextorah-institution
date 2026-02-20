@@ -1,4 +1,3 @@
-import Image from "next/image";
 import styles from "./WhitesandsLeadership.module.css";
 
 interface Feature {
@@ -24,7 +23,7 @@ export default function WhitesandsLeadership({
       <div className={styles.container}>
         <div className={styles.header}>
           <div className={styles.iconWrapper}>
-            <Image
+            <img
               src="/images/whitesands/icons/leadership.png"
               alt={`$Leadership Icon`}
               width={24}
@@ -42,7 +41,7 @@ export default function WhitesandsLeadership({
               className={`${styles.featureCard} ${styles[feature.color]}`}
             >
               <span className={styles.iconWrapper}>
-                <Image
+                <img
                   src={feature.icon}
                   alt={`${feature.title} Icon`}
                   width={20}

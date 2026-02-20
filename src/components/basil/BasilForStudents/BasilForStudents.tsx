@@ -1,7 +1,4 @@
-"use client";
-
 import React from "react";
-import Image from "next/image";
 import { basilData } from "@/data/basilSchoolsData";
 import styles from "./BasilForStudents.module.css";
 
@@ -26,17 +23,17 @@ const BasilForStudents: React.FC = () => {
 
         <div className={styles.grid}>
           <div className={styles.imageWrapper}>
-            <Image
+            <img
               src="/images/basil/Basil-Schools-Students-learning-with-technology.png"
               alt="Students at Lagoon Schools"
               width={500}
               height={400}
               className={styles.image}
-              priority
+              
             />
             <div className={styles.supportBadge}>
               <div className={styles.supportIcon}>
-                <Image
+                <img
                           src="/images/basil/icons/subjects.png"
                   alt={`Subjects Icon`}
                   width={24}
@@ -57,7 +54,7 @@ const BasilForStudents: React.FC = () => {
                   className={styles.cardIcon}
                   style={{ backgroundColor: `${colorMap[card.icon]}15` }}
                 >
-                  <Image
+                  <img
                     src={card.icon}
                     alt={`${card.title} Icon`}
                     width={16}

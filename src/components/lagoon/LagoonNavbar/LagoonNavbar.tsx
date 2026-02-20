@@ -1,7 +1,4 @@
-"use client";
-
-import Link from "next/link";
-import Image from "next/image";
+import { Link } from "react-router-dom";
 import styles from "./LagoonNavbar.module.css";
 
 interface LagoonNavbarProps {
@@ -20,22 +17,22 @@ export default function LagoonNavbar({
   return (
     <header className={styles.header}>
       <nav className={styles.nav}>
-        <Link href="/lagoon-schools" className={styles.brand}>
-          <Image
+        <Link to="/lagoon-schools" className={styles.brand}>
+          <img
             src={logo}
             alt="Lagoon Schools Logo"
             width={32}
             height={32}
-            priority
+            
           />
           <span className={styles.brandName}>{brandName}</span>
         </Link>
 
         <div className={styles.navActions}>
-          <Link href={loginHref} className={styles.loginBtn}>
+          <Link to={loginHref} className={styles.loginBtn}>
             Log In
           </Link>
-          <Link href={helpHref} className={styles.helpBtn}>
+          <Link to={helpHref} className={styles.helpBtn}>
             Get Help
           </Link>
         </div>

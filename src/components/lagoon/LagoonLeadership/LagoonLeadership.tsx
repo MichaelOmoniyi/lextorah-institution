@@ -1,4 +1,3 @@
-import Image from "next/image";
 import styles from "./LagoonLeadership.module.css";
 
 interface Feature {
@@ -25,7 +24,7 @@ export default function LagoonLeadership({
       <div className={styles.container}>
         <div className={styles.header}>
           <span className={styles.badge}>
-            <Image
+            <img
                         src="/images/lagoon/icons/leadership.png"
                 alt={`Leadership Icon`}
                 width={20}
@@ -44,7 +43,7 @@ export default function LagoonLeadership({
               className={`${styles.featureCard}`}
             >
               <div className={styles.iconWrapper}>
-                <Image
+                <img
                             src={feature.icon}
                     alt={`${feature.title} Icon`}
                     width={16}

@@ -1,4 +1,3 @@
-import Image from "next/image";
 import styles from "./WhitesandsForStudents.module.css";
 
 interface Benefit {
@@ -48,7 +47,7 @@ export default function WhitesandsForStudents({
             </ul>
           </div>
           <div className={styles.imageWrapper}>
-            <Image
+            <img
               src={image}
               alt="Students using Lextorah AI"
               width={450}

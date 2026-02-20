@@ -1,7 +1,4 @@
-"use client";
-
 import React from "react";
-import Image from "next/image";
 import { supremeData } from "@/data/supremeSchoolsData";
 import styles from "./SupremeForTeachers.module.css";
 
@@ -12,7 +9,7 @@ const SupremeForTeachers: React.FC = () => {
     <section id="teachers" className={styles.section}>
       <div className={styles.container}>
         <div className={styles.imageWrapper}>
-          <Image
+          <img
             src={forTeachers.image}
             alt="Teacher helping students"
             width={500}
@@ -23,7 +20,7 @@ const SupremeForTeachers: React.FC = () => {
 
         <div className={styles.content}>
           <div className={styles.headerIcon}>
-            <Image
+            <img
                         src="/images/supreme-foundation/icons/teachers.png"
                 alt={`Student Icon`}
                 width={24}
@@ -37,7 +34,7 @@ const SupremeForTeachers: React.FC = () => {
             {forTeachers.features.map((feature, index) => (
               <div key={index} className={styles.feature}>
                 <div className={styles.featureIcon}>
-                  <Image
+                  <img
                             src={feature.icon}
                     alt={`${feature.title} Icon`}
                     width={16}

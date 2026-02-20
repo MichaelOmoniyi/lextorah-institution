@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 import {
   ChrislandCommitment
 } from "@/components/chrisland";
@@ -60,7 +58,7 @@ export default function ChrislandSupport({
           {options.map((option, index) => (
             <div key={index} className={styles.optionCard}>
               <div className={styles.iconWrapper}>
-                <Image
+                <img
                   src={option.icon}
                   alt={`${option.title} Icon`}
                   width={24}

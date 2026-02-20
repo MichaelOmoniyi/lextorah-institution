@@ -1,7 +1,4 @@
-"use client";
-
 import React from "react";
-import Image from "next/image";
 import { supremeData } from "@/data/supremeSchoolsData";
 import styles from "./SupremeIntegrity.module.css";
 
@@ -12,7 +9,7 @@ const SupremeIntegrity: React.FC = () => {
     <section className={styles.section}>
       <div className={styles.container}>
         <div className={styles.iconWrapper}>
-          <Image
+          <img
                         src="/images/supreme-foundation/icons/responsible.png"
                 alt={`Responsible Icon`}
                 width={24}
@@ -26,7 +23,7 @@ const SupremeIntegrity: React.FC = () => {
           <ul className={styles.list}>
             {integrity.items.map((item, index) => (
               <li key={index} className={styles.listItem}>
-                <Image
+                <img
                               src="/images/supreme-foundation/icons/checkmark.png"
                       alt={`Checkmark Icon`}
                       width={16}

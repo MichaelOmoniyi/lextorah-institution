@@ -1,5 +1,4 @@
-import Image from "next/image";
-import Link from "next/link";
+import { Link } from "react-router-dom";
 import styles from "./ChrislandFooter.module.css";
 
 interface FooterLink {
@@ -36,7 +35,7 @@ export default function ChrislandFooter({
           {/* Logo Section */}
           <div className={styles.logoSection}>
             <div className={styles.logoWrapper}>
-              <Image
+              <img
                 src={logo}
                 alt="Chrisland Schools Logo"
                 width={48}
@@ -52,7 +51,7 @@ export default function ChrislandFooter({
             <ul className={styles.linksList}>
               {quickLinks.links.map((link, index) => (
                 <li key={index}>
-                  <Link href={link.href} className={styles.link}>
+                  <Link to={link.href} className={styles.link}>
                     {link.label}
                   </Link>
                 </li>

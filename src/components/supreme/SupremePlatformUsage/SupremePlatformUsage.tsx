@@ -1,7 +1,4 @@
-"use client";
-
 import React from "react";
-import Image from "next/image";
 import { supremeData } from "@/data/supremeSchoolsData";
 import styles from "./SupremePlatformUsage.module.css";
 
@@ -13,7 +10,7 @@ const SupremePlatformUsage: React.FC = () => {
       <div className={styles.container}>
         <div className={styles.header}>
           <div className={styles.headerIcon}>
-            <Image
+            <img
                         src="/images/supreme-foundation/icons/platform.png"
                 alt={`Platform Icon`}
                 width={24}

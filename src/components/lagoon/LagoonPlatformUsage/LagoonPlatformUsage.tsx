@@ -1,4 +1,3 @@
-import Image from "next/image";
 import styles from "./LagoonPlatformUsage.module.css";
 
 interface Feature {
@@ -23,7 +22,7 @@ export default function LagoonPlatformUsage({
       <div className={styles.container}>
         <div className={styles.header}>
           <span className={styles.badge}>
-            <Image
+            <img
                         src="/images/lagoon/icons/platform.png"
                 alt={`Platform Icon`}
                 width={20}
@@ -38,7 +37,7 @@ export default function LagoonPlatformUsage({
           {features.map((feature, index) => (
             <div key={index} className={styles.featureCard}>
               <div className={`${styles.iconWrapper}`}>
-                <Image
+                <img
                             src={feature.icon}
                     alt={`${feature.title} Icon`}
                     width={16}

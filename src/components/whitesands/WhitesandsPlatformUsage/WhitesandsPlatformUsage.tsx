@@ -1,4 +1,3 @@
-import Image from "next/image";
 import styles from "./WhitesandsPlatformUsage.module.css";
 
 interface Feature {
@@ -30,7 +29,7 @@ export default function WhitesandsPlatformUsage({
           {features.map((feature, index) => (
             <div key={index} className={styles.featureCard}>
               <div className={styles.iconWrapper}>
-                <Image
+                <img
                   src={feature.icon}
                   alt={`${feature.title} Icon`}
                   width={20}

@@ -1,4 +1,3 @@
-import Image from "next/image";
 import styles from "./CoronaPlatformUsage.module.css";
 
 interface Feature {
@@ -47,7 +46,7 @@ export default function CoronaPlatformUsage({
           {features.map((feature, index) => (
             <div key={index} className={styles.featureCard}>
               <div className={styles.iconWrapper}>
-                <Image
+                <img
                     src={feature.icon} 
                     alt={`${feature.title} Icon`}
                     width={26}

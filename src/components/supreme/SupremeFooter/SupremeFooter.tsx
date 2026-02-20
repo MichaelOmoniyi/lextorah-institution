@@ -1,8 +1,5 @@
-"use client";
-
 import React from "react";
-import Image from "next/image";
-import Link from "next/link";
+import { Link } from "react-router-dom";
 import { supremeData } from "@/data/supremeSchoolsData";
 import styles from "./SupremeFooter.module.css";
 
@@ -16,12 +13,12 @@ const SupremeFooter: React.FC = () => {
           <div className={styles.brandSection}>
             <div className={styles.logo}>
               <div className={styles.logoIcon}>
-                <Image
+                <img
               src="/images/supreme-foundation/Supreme-Foundation-hero.png"
               alt="Supreme Foundation Schools Logo"
               width={42}
               height={42}
-              priority
+              
             />
               </div>
             </div>
@@ -33,7 +30,7 @@ const SupremeFooter: React.FC = () => {
             <ul className={styles.linksList}>
               {footer.quickLinks.map((link, index) => (
                 <li key={index}>
-                  <Link href={link.href} className={styles.link}>
+                  <Link to={link.href} className={styles.link}>
                     {link.label}
                   </Link>
                 </li>
@@ -46,7 +43,7 @@ const SupremeFooter: React.FC = () => {
             <ul className={styles.linksList}>
               {footer.poweredBy.items.map((item, index) => (
                 <li key={index}>
-                  <Link href={item.href} className={styles.link}>
+                  <Link to={item.href} className={styles.link}>
                     {item.label}
                   </Link>
                 </li>

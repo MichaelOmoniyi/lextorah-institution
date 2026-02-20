@@ -1,7 +1,4 @@
-"use client";
-
 import React from "react";
-import Image from "next/image";
 import { basilData } from "@/data/basilSchoolsData";
 import styles from "./BasilLeadership.module.css";
 
@@ -21,7 +18,7 @@ const BasilLeadership: React.FC = () => {
           {leadership.cards.map((card, index) => (
             <div key={index} className={styles.card}>
               <div className={styles.cardIcon}>
-                <Image
+                <img
                   src={card.icon}
                   alt={`${card.title} Icon`}
                   width={16}

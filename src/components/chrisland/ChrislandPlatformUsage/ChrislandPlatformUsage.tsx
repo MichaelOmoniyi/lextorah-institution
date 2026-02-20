@@ -1,4 +1,3 @@
-import Image from "next/image";
 import styles from "./ChrislandPlatformUsage.module.css";
 
 interface Feature {
@@ -25,7 +24,7 @@ export default function ChrislandPlatformUsage({
           {features.map((feature, index) => (
             <div key={index} className={styles.featureCard}>
               <div className={styles.iconWrapper}>
-                <Image
+                <img
                     src={feature.icon}
                     alt="Checkmark Icon"
                     width={24}

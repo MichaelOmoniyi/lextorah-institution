@@ -1,4 +1,3 @@
-import Image from "next/image";
 import styles from "./LagoonIntegrity.module.css";
 
 interface IntegrityItem {
@@ -22,7 +21,7 @@ export default function LagoonIntegrity({
       <div className={styles.container}>
         <div className={styles.header}>
           <div className={styles.headerIcon}>
-            <Image
+            <img
                         src="/images/lagoon/icons/responsible.png"
                 alt={`Responsible Icon`}
                 width={36}
@@ -37,7 +36,7 @@ export default function LagoonIntegrity({
           {items.map((item, index) => (
             <div key={index} className={styles.item}>
               <div className={styles.iconWrapper}>
-                <Image
+                <img
                             src={item.icon}
                     alt={`${item.description} Icon`}
                     width={28}

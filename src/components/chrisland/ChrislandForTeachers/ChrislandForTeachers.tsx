@@ -1,4 +1,3 @@
-import Image from "next/image";
 import styles from "./ChrislandForTeachers.module.css";
 
 interface ChrislandForTeachersProps {
@@ -19,7 +18,7 @@ export default function ChrislandForTeachers({
       <div className={styles.container}>
         <div className={styles.content}>
           <div className={styles.imageWrapper}>
-            <Image
+            <img
               src={image}
               alt="Teachers using Lextorah AI"
               width={400}

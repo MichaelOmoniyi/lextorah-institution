@@ -1,8 +1,5 @@
-"use client";
-
 import React from "react";
-import Image from "next/image";
-import Link from "next/link";
+import { Link } from "react-router-dom";
 import { basilData } from "@/data/basilSchoolsData";
 import styles from "./BasilHero.module.css";
 
@@ -26,10 +23,10 @@ const BasilHero: React.FC = () => {
           <p className={styles.description}>{hero.description}</p>
 
           <div className={styles.buttons}>
-            <Link href={hero.primaryButton.href} className={styles.primaryButton}>
+            <Link to={hero.primaryButton.href} className={styles.primaryButton}>
               {hero.primaryButton.text}
             </Link>
-            <Link href={hero.secondaryButton.href} className={styles.secondaryButton}>
+            <Link to={hero.secondaryButton.href} className={styles.secondaryButton}>
               {hero.secondaryButton.text}
             </Link>
           </div>
@@ -39,7 +36,7 @@ const BasilHero: React.FC = () => {
           {hero.features.map((feature, index) => (
             <div key={index} className={styles.featureCard}>
               <div className={styles.featureIcon}>
-                <Image
+                <img
                   src={feature.icon}
                   alt={`${feature.value} Icon`}
                   width={16}

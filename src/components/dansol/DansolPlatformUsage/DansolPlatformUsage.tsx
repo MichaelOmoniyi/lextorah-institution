@@ -1,7 +1,4 @@
-"use client";
-
 import React from "react";
-import Image from "next/image";
 import { dansolData } from "@/data/dansolSchoolsData";
 import styles from "./DansolPlatformUsage.module.css";
 
@@ -13,7 +10,7 @@ const DansolPlatformUsage: React.FC = () => {
       <div className={styles.container}>
         <div className={styles.header}>
           <div className={styles.badgeIcon}>
-            <Image
+            <img
               src="/images/dansol/icons/platform.png"
               alt={`Platform Icon`}
               width={16}
@@ -27,7 +24,7 @@ const DansolPlatformUsage: React.FC = () => {
           {platformUsage.cards.map((card, index) => (
             <div key={index} className={styles.card}>
               <div className={styles.cardIcon}>
-                <Image
+                <img
                   src={card.icon}
                   alt={`${card.title} Icon`}
                   width={32}

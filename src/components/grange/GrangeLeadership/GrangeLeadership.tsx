@@ -1,4 +1,3 @@
-import Image from "next/image";
 import styles from "./GrangeLeadership.module.css";
 
 interface Feature {
@@ -24,7 +23,7 @@ export default function GrangeLeadership({
       <div className={styles.container}>
         <div className={styles.header}>
           <div className={styles.headerIcon}>
-            <Image
+            <img
               src="/images/grange/icons/leadership.png"
               alt={`Leadership Icon`}
               width={20}
@@ -42,7 +41,7 @@ export default function GrangeLeadership({
               className={`${styles.featureCard} ${styles[feature.color]}`}
             >
               <div className={styles.iconWrapper}>
-                <Image
+                <img
                   src={feature.icon}
                   alt={`${feature.title} Icon`}
                   width={20}

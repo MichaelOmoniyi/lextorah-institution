@@ -1,8 +1,5 @@
-"use client";
-
 import React from "react";
-import Image from "next/image";
-import Link from "next/link";
+import { Link } from "react-router-dom";
 import { dansolData } from "@/data/dansolSchoolsData";
 import styles from "./DansolHero.module.css";
 
@@ -24,10 +21,10 @@ const DansolHero: React.FC = () => {
             </div>
             <p className={styles.description}>{hero.description}</p>
             <div className={styles.buttons}>
-              <Link href={hero.primaryButton.href} className={styles.primaryBtn}>
+              <Link to={hero.primaryButton.href} className={styles.primaryBtn}>
                 {hero.primaryButton.text}
               </Link>
-              <Link href={hero.secondaryButton.href} className={styles.secondaryBtn}>
+              <Link to={hero.secondaryButton.href} className={styles.secondaryBtn}>
                 {hero.secondaryButton.text}
               </Link>
             </div>
@@ -39,7 +36,7 @@ const DansolHero: React.FC = () => {
                 <div key={index} className={styles.featureCard}>
                   {index === 3 ? (
                     <div className={styles.featureIcon}>
-                        <Image
+                        <img
                     src="/images/dansol/icons/safe.png"
                       alt={`Safe Icon`}
                       width={36}

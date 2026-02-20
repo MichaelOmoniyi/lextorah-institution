@@ -1,4 +1,3 @@
-import Image from "next/image";
 import styles from "./CoronaSchoolLeadership.module.css";
 
 interface Feature {
@@ -51,7 +50,7 @@ export default function CoronaSchoolLeadership({
         <div className={styles.header}>
           <div className={styles.titleWrapper}>
             <span className={styles.icon}>
-                <Image
+                <img
                     src="/images/corona/icons/school-leadership.png"
                     alt="Leadership Icon"
                     width={24}
@@ -66,7 +65,7 @@ export default function CoronaSchoolLeadership({
         <div className={styles.featuresGrid}>
           {features.map((feature, index) => (
             <div key={index} className={styles.featureCard}>
-                <Image
+                <img
                     src={feature.icon} 
                     alt={`${feature.title} Icon`}
                     width={26}

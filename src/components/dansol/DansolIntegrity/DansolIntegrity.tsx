@@ -1,7 +1,4 @@
-"use client";
-
 import React from "react";
-import Image from "next/image";
 import { dansolData } from "@/data/dansolSchoolsData";
 import styles from "./DansolIntegrity.module.css";
 
@@ -32,7 +29,7 @@ const DansolIntegrity: React.FC = () => {
           <div className={styles.leftSide}>
             <div className={styles.integrityCard}>
               <div className={styles.integrityIcon}>
-                <Image
+                <img
                   src="/images/dansol/icons/integrity.png"
                   alt={`Integrity Icon`}
                   width={56}

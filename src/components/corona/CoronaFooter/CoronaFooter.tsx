@@ -1,7 +1,4 @@
-"use client";
-
 import { useRef, useEffect, useState } from "react";
-import Image from "next/image";
 import styles from "./CoronaFooter.module.css";
 
 interface CoronaFooterProps {
@@ -36,7 +33,7 @@ export default function CoronaFooter({
       <div className={styles.container}>
         <div className={styles.branding}>
           <div className={styles.logoWrapper} style={{ height: logoHeight }}>
-            <Image
+            <img
               src={logo}
               alt="Lextorah AI Logo"
               width={Math.round(logoHeight * 0.88)}

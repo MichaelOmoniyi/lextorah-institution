@@ -1,4 +1,3 @@
-import Image from "next/image";
 import styles from "./UnilagSupport.module.css";
 
 interface SupportItem {
@@ -27,7 +26,7 @@ export default function UnilagSupport({
       <div className={styles.container}>
         <div className={styles.header}>
           <div className={styles.iconWrapper}>
-            <Image
+            <img
               src="/images/whitesands/icons/support.png"
               alt={`$Support Icon`}
               width={24}
@@ -42,7 +41,7 @@ export default function UnilagSupport({
           {items.map((item, index) => (
             <div key={index} className={styles.item}>
               <div className={styles.iconWrapper}>
-                <Image
+                <img
                   src={item.icon}
                   alt={`${item.title} Icon`}
                   width={24}

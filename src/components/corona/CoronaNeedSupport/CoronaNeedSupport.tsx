@@ -1,4 +1,3 @@
-import Image from "next/image";
 import styles from "./CoronaNeedSupport.module.css";
 
 interface SupportOption {
@@ -23,7 +22,7 @@ export default function CoronaNeedSupport({
         <div className={styles.header}>
           <div className={styles.titleWrapper}>
             <span className={styles.icon}>
-              <Image
+              <img
                 src="/images/corona/icons/support.png"
                 alt={`Support Icon`}
                 width={24}
@@ -39,7 +38,7 @@ export default function CoronaNeedSupport({
           {options.map((option, index) => (
             <div key={index} className={styles.optionCard}>
               <div className={styles.iconWrapper}>
-                <Image
+                <img
                     src={option.icon}
                     alt={`${option.title} Icon`}
                     width={26}

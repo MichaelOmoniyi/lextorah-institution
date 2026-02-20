@@ -1,4 +1,3 @@
-import Image from "next/image";
 import styles from "./UnilagLeadership.module.css";
 
 interface Feature {
@@ -23,7 +22,7 @@ export default function UnilagLeadership({
       <div className={styles.container}>
         <div className={styles.header}>
           <div className={styles.headerIcon}>
-            <Image
+            <img
               src="/images/unilag/icons/leadership.png"
               alt={`Leadership Icon`}
               width={20}
@@ -41,7 +40,7 @@ export default function UnilagLeadership({
               className={`${styles.featureCard}`}
             >
               <div className={styles.iconWrapper}>
-                <Image
+                <img
                   src={feature.icon}
                   alt={`${feature.title} Icon`}
                   width={20}

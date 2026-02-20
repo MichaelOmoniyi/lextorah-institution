@@ -1,4 +1,3 @@
-import Image from "next/image";
 import styles from "./UnilagIntegrity.module.css";
 
 interface IntegrityItem {
@@ -24,7 +23,7 @@ export default function UnilagIntegrity({
           {items.map((item, index) => (
             <div key={index} className={styles.item}>
               <div className={styles.iconWrapper}>
-                <Image
+                <img
                   src={item.icon}
                   alt={`${item.text} Icon`}
                   width={20}

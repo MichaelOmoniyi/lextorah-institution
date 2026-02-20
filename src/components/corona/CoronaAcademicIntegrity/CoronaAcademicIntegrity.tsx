@@ -1,4 +1,3 @@
-import Image from "next/image";
 import styles from "./CoronaAcademicIntegrity.module.css";
 
 interface Point {
@@ -22,7 +21,7 @@ export default function CoronaAcademicIntegrity({
         <div className={styles.card}>
           <div className={styles.titleWrapper}>
             <span className={styles.icon}>
-                <Image
+                <img
                     src="/images/corona/icons/responsible.png"
                     alt="Responsible Icon"
                     width={24}
@@ -36,7 +35,7 @@ export default function CoronaAcademicIntegrity({
             {points.map((point, index) => (
               <li key={index} className={styles.pointItem}>
                 <span className={styles.bullet}>
-                  <Image
+                  <img
                     src="/images/corona/icons/checkmark.png"
                     alt="Checkmark Icon"
                     width={24}

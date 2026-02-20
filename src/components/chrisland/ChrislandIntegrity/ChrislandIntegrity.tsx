@@ -1,4 +1,3 @@
-import Image from "next/image";
 import styles from "./ChrislandIntegrity.module.css";
 
 interface ChrislandIntegrityProps {
@@ -19,7 +18,7 @@ export default function ChrislandIntegrity({
             {points.map((point, index) => (
               <li key={index} className={styles.pointItem}>
                 <span className={styles.iconWrapper}>
-                  <Image
+                  <img
                     src={point.icon}
                     alt={`${point.title} Icon`}
                     width={20}

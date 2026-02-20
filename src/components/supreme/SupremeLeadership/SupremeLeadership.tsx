@@ -1,7 +1,4 @@
-"use client";
-
 import React from "react";
-import Image from "next/image";
 import { supremeData } from "@/data/supremeSchoolsData";
 import styles from "./SupremeLeadership.module.css";
 
@@ -13,7 +10,7 @@ const SupremeLeadership: React.FC = () => {
       <div className={styles.container}>
         <div className={styles.header}>
           <div className={styles.headerIcon}>
-            <Image
+            <img
                         src="/images/supreme-foundation/icons/leadership.png"
                 alt={`Leadership Icon`}
                 width={24}
@@ -28,7 +25,7 @@ const SupremeLeadership: React.FC = () => {
           {leadership.cards.map((card, index) => (
             <div key={index} className={styles.card}>
               <div className={styles.cardIcon}>
-                <Image
+                <img
                             src={card.icon}
                     alt={`${card.title} Icon`}
                     width={16}

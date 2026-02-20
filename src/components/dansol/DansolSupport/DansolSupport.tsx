@@ -1,8 +1,5 @@
-"use client";
-
 import React from "react";
-import Image from "next/image";
-import Link from "next/link";
+import { Link } from "react-router-dom";
 import { dansolData } from "@/data/dansolSchoolsData";
 import styles from "./DansolSupport.module.css";
 
@@ -13,7 +10,7 @@ const DansolSupport: React.FC = () => {
       <div className={styles.container}>
         <div className={styles.header}>
           <div className={styles.headerIcon}>
-            <Image
+            <img
               src="/images/dansol/icons/support-.png"
               alt={`Support Icon`}
               width={16}
@@ -30,7 +27,7 @@ const DansolSupport: React.FC = () => {
               <div 
                 className={styles.cardIcon}
               >
-                <Image
+                <img
                   src={card.icon}
                   alt={`${card.title} Icon`}
                   width={24}
@@ -40,7 +37,7 @@ const DansolSupport: React.FC = () => {
               <h3 className={styles.cardTitle}>{card.title}</h3>
               <p className={styles.cardDescription}>{card.description}</p>
               <Link 
-                href={card.buttonHref} 
+                to={card.buttonHref} 
                 className={`${styles.cardBtn}`}
               >
                 {card.buttonText}
@@ -50,7 +47,7 @@ const DansolSupport: React.FC = () => {
         </div>
 
         <div className={styles.commitment}>
-          <Image
+          <img
             src="/images/dansol/icons/achievement.png"
             alt={`Achievement Icon`}
             width={44}

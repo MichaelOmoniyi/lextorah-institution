@@ -1,4 +1,3 @@
-import Image from "next/image";
 import styles from "./UnilagFooter.module.css";
 
 interface QuickLink {
@@ -27,7 +26,7 @@ export default function UnilagFooter({
         <div className={styles.footerGrid}>
           {/* Brand column */}
           <div className={styles.brandColumn}>
-            <Image src={logo} alt="Unilag Schools" width={32} height={32} className={styles.logo} />
+            <img src={logo} alt="Unilag Schools" width={32} height={32} className={styles.logo} />
             <p className={styles.description}>{description}</p>
           </div>
 

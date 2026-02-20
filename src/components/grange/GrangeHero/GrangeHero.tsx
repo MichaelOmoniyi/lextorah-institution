@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { Link } from "react-router-dom";
 import styles from "./GrangeHero.module.css";
 
 interface GrangeHeroProps {
@@ -35,10 +35,10 @@ export default function GrangeHero({
         <span className={styles.badge}>{badge}</span>
         <p className={styles.description}>{description}</p>
         <div className={styles.buttons}>
-          <Link href={primaryButtonHref} className={styles.primaryBtn}>
+          <Link to={primaryButtonHref} className={styles.primaryBtn}>
             {primaryButtonText}
           </Link>
-          <Link href={secondaryButtonHref} className={styles.secondaryBtn}>
+          <Link to={secondaryButtonHref} className={styles.secondaryBtn}>
             {secondaryButtonText}
           </Link>
         </div>

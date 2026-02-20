@@ -1,4 +1,3 @@
-import Image from "next/image";
 import styles from "./WhitesandsIntegrity.module.css";
 
 interface IntegrityItem {
@@ -28,7 +27,7 @@ export default function WhitesandsIntegrity({
           {items.map((item, index) => (
             <div key={index} className={styles.item}>
               <div className={styles.iconWrapper}>
-                <Image
+                <img
                   src={item.icon}
                   alt={`${item.title} Icon`}
                   width={20}

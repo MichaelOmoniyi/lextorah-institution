@@ -1,4 +1,3 @@
-import Image from "next/image";
 import styles from "./GrangeForStudents.module.css";
 
 interface Benefit {
@@ -24,7 +23,7 @@ export default function GrangeForStudents({
       <div className={styles.container}>
         <div className={styles.content}>
           <div className={styles.iconWrapper}>
-            <Image
+            <img
               src="/images/grange/icons/student.png"
               alt={`Student Icon`}
               width={20}
@@ -52,7 +51,7 @@ export default function GrangeForStudents({
         </div>
 
         <div className={styles.imageWrapper}>
-          <Image
+          <img
             src={image}
             alt="Students learning"
             width={500}

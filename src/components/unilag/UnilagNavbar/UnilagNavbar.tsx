@@ -1,7 +1,4 @@
-"use client";
-
-import Link from "next/link";
-import Image from "next/image";
+import { Link } from "react-router-dom";
 import styles from "./UnilagNavbar.module.css";
 
 interface UnilagNavbarProps {
@@ -17,22 +14,22 @@ export default function UnilagNavbar({logo = "/images/grange/UNILAG-Internationa
   return (
     <header className={styles.header}>
       <nav className={styles.nav}>
-        <Link href="/unilag-schools" className={styles.logo}>
-          <Image
+        <Link to="/unilag-schools" className={styles.logo}>
+          <img
             src={logo}
             alt="UNILAG International School Logo"
             width={80}
             height={80}
             className={styles.logoImage}
-            priority
+            
           />
         </Link>
 
         <div className={styles.navActions}>
-          <Link href={loginHref} className={styles.loginBtn}>
+          <Link to={loginHref} className={styles.loginBtn}>
             Log In
           </Link>
-          <Link href={helpHref} className={styles.helpBtn}>
+          <Link to={helpHref} className={styles.helpBtn}>
             Get Help
           </Link>
         </div>
