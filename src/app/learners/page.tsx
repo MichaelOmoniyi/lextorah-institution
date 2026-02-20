@@ -1,5 +1,4 @@
-import { Metadata } from "next";
-import Link from "next/link";
+import { Link } from "react-router-dom";
 import { DefaultLayout } from "@/components/layout";
 import {
   LearnerHero,
@@ -23,14 +22,6 @@ import {
   learnerFAQs,
   learnerCtaSection,
 } from "@/data/learnerData";
-import styles from "./page.module.css";
-
-export const metadata: Metadata = {
-  title: "For Learners & Students | Lextorah - Learn Better, Practise Smarter, Build Confidence",
-  description:
-    "Learn better, practise smarter, and build confidence with Lextorah AI and Ms. Lexi®. Get personalized learning support for all subjects and exam preparation.",
-};
-
 export default function LearnersPage() {
   return (
     <DefaultLayout>
@@ -70,15 +61,18 @@ export default function LearnersPage() {
       />
 
       {/* Frequently Asked Questions */}
-      <section className={styles.faqSection}>
+      <section className="bg-[var(--white)]">
         <FAQSection
           title="Frequently Asked Questions"
           subtitle="Everything you need to know about Lextorah AI and Ms Lexi®"
           faqs={learnerFAQs}
         />
-        <div className={styles.faqCta}>
-          <p>Lextorah AI is here to support your learning — your effort, honesty, and curiosity make the difference</p>
-          <Link href="/contact" className={styles.faqLink}>
+        <div className="text-center px-[var(--spacing-lg)] pb-[var(--spacing-2xl)]">
+          <p className="mb-8 text-[var(--text-secondary)]">Lextorah AI is here to support your learning — your effort, honesty, and curiosity make the difference</p>
+          <Link
+            to="/contact"
+            className="inline-flex items-center justify-center px-[var(--spacing-xl)] py-[var(--spacing-md)] bg-[var(--primary)] text-[var(--white)] text-[var(--font-size-sm)] font-semibold rounded-[var(--radius-md)] transition-all hover:bg-[var(--primary-dark)] hover:text-[var(--white)]"
+          >
             Still Have Questions? Contact Us
           </Link>
         </div>
