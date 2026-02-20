@@ -1,4 +1,3 @@
-import { Metadata } from "next";
 import { DefaultLayout } from "@/components/layout";
 import {
   HeroSection,
@@ -11,12 +10,6 @@ import {
   CTASection,
 } from "@/components/sections";
 import { parentFAQs, msLexiFAQs } from "@/data/parentsData";
-
-export const metadata: Metadata = {
-  title: "For Parents | Lextorah - Supporting Your Child's Learning Responsibly",
-  description:
-    "Learn how Lextorah AI and Ms. Lexi® provide safe, responsible academic support for your child. Clear academic support. Responsible technology. Confidence for parents.",
-};
 
 export default function ParentsPage() {
   return (

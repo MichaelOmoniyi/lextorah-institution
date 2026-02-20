@@ -11,12 +11,6 @@ import {
   DansolFooter,
 } from "@/components/dansol";
 
-export const metadata = {
-  title: "Lextorah | Dansol High School",
-  description:
-    "AI-powered personalized learning for students at Dansol High School. Get homework help, exam prep, and 24/7 learning support.",
-};
-
 const DansolSchoolsPage: React.FC = () => {
   return (
     <>

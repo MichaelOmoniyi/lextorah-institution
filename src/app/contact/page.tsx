@@ -1,4 +1,3 @@
-import { Metadata } from "next";
 import { DefaultLayout } from "@/components/layout";
 import {
   ContactHero,
@@ -14,12 +13,6 @@ import {
   stayConnectedData,
   brandBannerData,
 } from "@/data/contact";
-
-export const metadata: Metadata = {
-  title: "Contact Us | Lextorah Education - Get in Touch",
-  description:
-    "Get in touch with Lextorah Education. We're here to support your learning journey and answer any questions about our programmes, pathways, and partnerships.",
-};
 
 export default function ContactPage() {
   return (

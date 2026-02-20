@@ -11,12 +11,6 @@ import {
   BasilFooter,
 } from "@/components/basil";
 
-export const metadata = {
-  title: "Lextorah | Basil Secondary School",
-  description:
-    "AI-powered personalized learning for students at Basil Secondary School. Get homework help, exam prep, and 24/7 learning support.",
-};
-
 const BasilSchoolsPage: React.FC = () => {
   return (
     <>

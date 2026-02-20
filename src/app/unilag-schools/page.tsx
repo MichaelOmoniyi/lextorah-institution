@@ -11,12 +11,6 @@ import {
 import UnilagFooter from "@/components/unilag/UnilagFooter";
 import { unilagData } from "@/data/unilagSchoolsData";
 
-export const metadata = {
-  title: "UNILAG International School Lagos | AI Learning Hub - Lextorah",
-  description:
-    "The official academic support system for UNILAG International School Lagos. Lextorah AI assists teachers and improves student outcomes.",
-};
-
 export default function UnilagSchoolsPage() {
   const {
       navbarData,

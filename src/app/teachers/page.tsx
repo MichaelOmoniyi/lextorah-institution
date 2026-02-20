@@ -1,4 +1,3 @@
-import { Metadata } from "next";
 import { DefaultLayout } from "@/components/layout";
 import {
   HeroSection,
@@ -21,12 +20,6 @@ import {
   teacherFAQs,
   teacherCtaSection,
 } from "@/data/teachersData";
-
-export const metadata: Metadata = {
-  title: "For Teachers & Tutors | Lextorah AI Teaching Support Hub",
-  description:
-    "Teach with clarity. Support students better. Reduce academic overload. Discover how Lextorah AI and Ms. Lexi® help teachers and tutors work more effectively.",
-};
 
 export default function TeachersPage() {
   return (

@@ -1,4 +1,3 @@
-import { Metadata } from "next";
 import { DefaultLayout } from "@/components/layout";
 import styles from "../../components/sections/AboutHero/AboutHero.module.css";
 import {
@@ -21,12 +20,6 @@ import {
   ourCommitment,
   ourIdentity,
 } from "@/data/about";
-
-export const metadata: Metadata = {
-  title: "About Lextorah Education | Education Designed for Global Readiness",
-  description:
-    "Lextorah Education is a forward-thinking education and learning technology institution dedicated to preparing learners for success in international academic and professional environments.",
-};
 
 export default function AboutPage() {
   return (
